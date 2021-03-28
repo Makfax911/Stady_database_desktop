@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #1c222a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text layoutX="47.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notebook">
+         <font>
+            <Font name="Bookman Old Style Bold" size="32.0" />
+         </font>
+      </Text>
+      <TextField id="input_id" fx:id="input_id" layoutX="31.0" layoutY="66.0" prefHeight="21.0" prefWidth="189.0" promptText="Enter text" style="-fx-background-color: #537072;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Button id="button_id" fx:id="button_id" layoutX="47.0" layoutY="129.0" mnemonicParsing="false" style="-fx-background-color: #2c4a53;" text="Add" textFill="#eeeded">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete_id" layoutX="154.0" layoutY="129.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="50.0" style="-fx-background-color: #2c4a53;" text="Del" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+    <AnchorPane layoutX="36.0" layoutY="180.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ScrollPane layoutX="-36.0" prefHeight="238.0" prefWidth="277.0" style="-fx-background-color: #1c222a; " stylesheets="@css/main.css">
+               <content>
+                  <VBox fx:id="output_id" alignment="BASELINE_LEFT" disable="true" focusTraversable="true" prefHeight="243.0" prefWidth="286.0" style="-fx-font-size: 16; -fx-background-color: #537074; -fx-font-smoothing-type: white;">
+                     <opaqueInsets>
+                        <Insets left="1.0" />
+                     </opaqueInsets>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
